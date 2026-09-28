@@ -3,6 +3,9 @@ def add_student(name):
     if not name.strip():
         print("student name cannot be empty")
         return
+    if name in students:
+        print("students cannot be duplicated")
+        return
     students.append(name)
 def show_students():
     print("Students:")
@@ -11,4 +14,6 @@ def show_students():
 
 add_student("sai")
 add_student("teju")
+add_student("teju")
+
 show_students()
