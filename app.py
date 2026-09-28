@@ -1,5 +1,8 @@
 students=[]
 def add_student(name):
+    if not name.strip():
+        print("student name cannot be empty")
+        return
     students.append(name)
 def show_students():
     print("Students:")
