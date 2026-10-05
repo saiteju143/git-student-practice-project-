@@ -1,4 +1,66 @@
+# Python cache files
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+
 .env
-.venv
-__pycache__/
-*.pyc
+.env.*
+!.env.example
+
+# Credentials and secrets
+
+credentials/
+credentials.json
+secrets/
+secrets.json
+*credentials*.json
+*secret*.json
+*.pem
+*.key
+*.crt
+
+# IDE / editor files
+
+.vscode/
+.idea/
+*.code-workspace
+
+# Operating system files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python packaging
+
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test and coverage files
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+
+*.log
+
+# Temporary files
+
+*.tmp
+*.temp
